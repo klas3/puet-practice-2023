@@ -18,9 +18,22 @@
 /* Vendor */
 
 /* Components */
+@import 'base/common';
+@import 'base/buttons';
+
+/* Sliders */
+@import 'sections/slick';
+
+/* Section */
+@import 'sections/hero';
+@import 'sections/statistics';
+@import 'sections/advice';
+@import 'sections/showcase';
+@import 'sections/partners';
+@import 'sections/contacts';
 
 /* Browser specific styles */
 @import 'dirty/hacks';
 
 /* Demo Page styles */
-@import 'demo';
+@import 'landing';

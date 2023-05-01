@@ -1,0 +1,91 @@
+.contacts {
+  display: grid;
+  place-items: center;
+  background: #fafafa;
+}
+
+.contacts-title {
+  display: grid;
+  place-items: center;
+  margin-bottom: 45px;
+
+  &__container {
+    max-width: 511px;
+  }
+
+  &__info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $second-text-color;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: $text-color;
+  }
+}
+
+.contacts-body {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  height: 393px;
+
+  .email {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+
+  .get-support {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+
+  .submit {
+    width: 160px;
+    height: 44px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: transparent;
+    color: #FFA62B;
+    cursor: pointer;
+  }
+
+  .card {
+    width: 328px;
+    height: 333px;
+    padding: 50px;
+    
+    display: grid;
+    place-items: center;
+    background-color: white;
+
+    transition: all ease 0.3s;
+
+    &:hover {
+      width: 328px;
+      height: 393px;
+      padding: 80px 50px;
+
+      background: #252B42;
+      color: white;
+
+      .submit {
+        color: white;
+      }
+    }
+  }
+}
