@@ -1,0 +1,108 @@
+.footer {
+  padding: 0px;
+}
+
+.contact-us {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+
+  padding: 40px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+  button {
+    width: 160px;
+    height: 58px;
+  }
+}
+
+.map {
+  background: #16697A;
+  padding: 50px 0px 50px 195px;
+
+  display: grid;
+  grid-auto-flow: column;
+
+  h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: grid;
+    place-items: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+
+  ul {
+    display: grid;
+    gap: 10px;
+  }
+
+  :last-child {
+    background-color: #16697A;
+
+    li {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+  }
+
+  a {
+    color: white;
+    transition: color ease .25s;
+
+    &:hover {
+      color: rgb(196, 196, 196);
+    }
+  }
+}
+
+.basement {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 25px 195px;
+  justify-content: space-between;
+
+  h6 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+  .social {
+    display: grid;
+    grid-auto-flow: column;
+    width: 156px;
+    gap: 20px
+  }
+}

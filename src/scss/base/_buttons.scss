@@ -15,6 +15,8 @@
     background-color: $primary-color;
     color: #fff;
 
+    cursor: pointer;
+
     transition: background-color ease .35s, color ease .35s;
 
     & + & {
