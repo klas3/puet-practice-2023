@@ -3,8 +3,10 @@
 
   .logos {
     display: grid;
-    grid-auto-flow: column;
+    place-items: center;
     justify-content: space-around;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .footer {
@@ -21,16 +23,26 @@
   .newsletter {
     display: grid;
     grid-auto-flow: column;
-    width: 70%;
     position: relative;
+    place-items: center;
     top: 57px;
+    gap: 30px;
+    max-width: 950px;
 
-    width: 950px;
     background: #16697A;
     border-radius: 2px;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px;
 
-    h3 {
+    @media (max-width: 1050px) {
+      grid-auto-flow: row;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+      padding: 30px;
+    }
+
+    .title {
       font-weight: 700;
       font-size: 24px;
       line-height: 32px;
@@ -41,6 +53,8 @@
     .input-container {
       display: grid;
       grid-auto-flow: column;
+      width: 100%;
+      justify-content: center;
     }
 
     input {
@@ -48,7 +62,11 @@
       border: 1px solid #E6E6E6;
       border-radius: 5px 0px 0px 5px;
       height: 58px;
-      width: 333px;
+      width: 300px;
+
+      @media (max-width: 500px) {
+        width: unset;
+      }
 
       padding-left: 20px;
 

@@ -40,7 +40,30 @@
 .showcase-body {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 69% 31%;
+  grid-template-columns: 60% 40%;
+  padding: 0px 40px;
+  gap: 50px;
+  place-items: center;
+  
+  @media (max-width: 1050px) {
+    grid-auto-flow: row;
+    grid-template-columns: unset;
+    place-items: center;
+
+    .description {
+      max-width: 400px;
+    }
+  }
+
+  .video {
+    background-image: url(../images/content/meeting-room.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 600px;
+    height: 442px;
+    width: 100%;
+  }
 
   .content {
     display: grid;
@@ -68,11 +91,11 @@
 
   img.play-button {
     position: relative;
-    top: -260px;
-    left: 250px
+    top: 170px;
+    left: 40%;
   }
 
-  h5 {
+  .title {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -80,7 +103,7 @@
     color: #252B42;
   }
 
-  h6 {
+  .label {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;

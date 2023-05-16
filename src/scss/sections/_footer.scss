@@ -6,10 +6,16 @@
   display: grid;
   grid-auto-flow: column;
   place-items: center;
+  gap: 20px;
+
+  @media (max-width: 740px) {
+    grid-auto-flow: row;
+    text-align: center;
+  }
 
   padding: 40px;
 
-  h3 {
+  .title {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
@@ -34,12 +40,13 @@
 
 .map {
   background: #16697A;
-  padding: 50px 0px 50px 195px;
+  padding: 50px;
+  gap: 30px;
 
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-  p {
+  .title {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -48,7 +55,7 @@
     margin-bottom: 20px;
   }
 
-  li {
+  .item {
     display: grid;
     place-items: center;
 
@@ -59,15 +66,13 @@
     color: #FFFFFF;
   }
 
-  ul {
+  .list {
     display: grid;
     gap: 10px;
   }
 
   :last-child {
-    background-color: #16697A;
-
-    li {
+    .item {
       display: grid;
       grid-auto-flow: column;
       gap: 10px;
@@ -88,7 +93,7 @@
 .basement {
   display: grid;
   grid-auto-flow: column;
-  padding: 25px 195px;
+  padding: 25px;
   justify-content: space-between;
 
   p {

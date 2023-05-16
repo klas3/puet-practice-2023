@@ -21,6 +21,8 @@
       <div class="container hero__container">
         <div class="row navbar">
           <a class="hero__logo" href="#">Indicorp</a>
+          <input class="hero__side-menu" type="checkbox" id="side-menu" />
+          <label class="hero__menu" for="side-menu"><span class="hero__menu-line"></span></label>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item nav__item--active"><a href="#">Home</a></li>
@@ -120,6 +122,10 @@
               <p class="statistics-block__descr">Cases done</p>
             </div>
           </div>
+          <div class="slider-nav">
+            <img class="statistics-prev" src="images/content/arrow-left.svg" />
+            <img class="statistics-next" src="images/content/arrow-right.svg" />
+          </div>
         </div>
       </section>
       <section class="features">
@@ -183,6 +189,10 @@
                 <img class="advice-block__cover" src="images/content/cover5.webp" alt="cover" />
               </div>
             </div>
+            <div class="slider-nav">
+              <img class="advice-prev" src="images/content/arrow-left.svg" />
+              <img class="advice-next" src="images/content/arrow-right.svg" />
+            </div>
           </div>
         </div>
       </section>
@@ -199,11 +209,10 @@
           </div>
         </div>
         <div class="container showcase-body">
-          <div>
-            <img src="./images/content/meeting-room.png" />
+          <div class="video">
             <img class="play-button" src="./images/content/play.svg" />
           </div>
-          <div>
+          <div class="description">
             <h2>Most trusted in our field</h2>
             <div class="showcase-body__info">
               Most calendars are designed for teams. Slate is designed for freelancers who want a
@@ -212,22 +221,22 @@
             <div class="content">
               <img src="./images/content/people.svg" />
               <div>
-                <h5>the quick fox jumps over the lazy dog</h5>
-                <h6>Things on a very small scale...</h6>
+                <p class="title">the quick fox jumps over the lazy dog</p>
+                <p class="label">Things on a very small scale...</p>
               </div>
             </div>
             <div class="content">
               <img src="./images/content/meter.svg" />
               <div>
-                <h5>the quick fox jumps over the lazy dog</h5>
-                <h6>Things on a very small scale...</h6>
+                <p class="title">the quick fox jumps over the lazy dog</p>
+                <p class="label">Things on a very small scale...</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="feature partners">
-        <div class="container logos">
+      <section class="partners">
+        <div class="logos">
           <img src="images/content/hooli.svg" />
           <img src="images/content/lyft.svg" />
           <img src="images/content/boat.svg" />
@@ -237,7 +246,7 @@
         </div>
         <div class="footer">
           <div class="newsletter">
-            <h3>Subscribe For Latest Newsletter</h3>
+            <p class="title">Subscribe For Latest Newsletter</p>
             <div class="input-container">
               <input placeholder="Your Email" />
               <button>Subscribe</button>
@@ -246,7 +255,7 @@
           <div class="line" />
         </div>
       </section>
-      <section class="feature contacts">
+      <section class="contacts">
         <div class="contacts-title">
           <div class="contacts-title__container">
             <h2>Get In Touch</h2>
@@ -258,21 +267,27 @@
         </div>
         <div class="contacts-body">
           <div class="card">
-            <img src="./images/content/phone.svg" />
+            <svg>
+              <use xlink:href="images/content/phone.svg#phone"></use>
+            </svg>
             <div class="email">georgia.young@example.com</div>
             <div class="email">georgia.young@ple.com</div>
             <div class="get-support">Get Support</div>
             <button class="submit">Submit Request</button>
           </div>
           <div class="card">
-            <img src="./images/content/location.svg" />
+            <svg>
+              <use xlink:href="images/content/location.svg#location"></use>
+            </svg>
             <div class="email">georgia.young@example.com</div>
             <div class="email">georgia.young@ple.com</div>
             <div class="get-support">Get Support</div>
             <button class="submit">Submit Request</button>
           </div>
           <div class="card">
-            <img src="./images/content/mail.svg" />
+            <svg>
+              <use xlink:href="images/content/mail.svg#mail"></use>
+            </svg>
             <div class="email">georgia.young@example.com</div>
             <div class="email">georgia.young@ple.com</div>
             <div class="get-support">Get Support</div>
@@ -280,60 +295,62 @@
           </div>
         </div>
       </section>
-      <section class="feature footer">
+      <section class="footer">
         <div class="contact-us">
           <div>
-            <h3>Consulting Agency For Your Business</h3>
+            <p class="title">Consulting Agency For Your Business</p>
             <p>the quick fox jumps over the lazy dog</p>
           </div>
           <button class="btn">Contact us</button>
         </div>
         <div class="map">
           <div>
-            <p>Company Info</p>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Carrier</a></li>
-              <li><a href="#">We are hiring</a></li>
-              <li><a href="#">Blog</a></li>
+            <p class="title">Company Info</p>
+            <ul class="list">
+              <li class="item"><a href="#">About Us</a></li>
+              <li class="item"><a href="#">Carrier</a></li>
+              <li class="item"><a href="#">We are hiring</a></li>
+              <li class="item"><a href="#">Blog</a></li>
             </ul>
           </div>
           <div>
-            <p>Legal</p>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Carrier</a></li>
-              <li><a href="#">We are hiring</a></li>
-              <li><a href="#">Blog</a></li>
+            <p class="title">Legal</p>
+            <ul class="list">
+              <li class="item"><a href="#">About Us</a></li>
+              <li class="item"><a href="#">Carrier</a></li>
+              <li class="item"><a href="#">We are hiring</a></li>
+              <li class="item"><a href="#">Blog</a></li>
             </ul>
           </div>
           <div>
-            <p>Features</p>
-            <ul>
-              <li><a href="#">Business Marketing</a></li>
-              <li><a href="#">User Analytic</a></li>
-              <li><a href="#">Live Chat</a></li>
-              <li><a href="#">Unlimited Support</a></li>
+            <p class="title">Features</p>
+            <ul class="list">
+              <li class="item"><a href="#">Business Marketing</a></li>
+              <li class="item"><a href="#">User Analytic</a></li>
+              <li class="item"><a href="#">Live Chat</a></li>
+              <li class="item"><a href="#">Unlimited Support</a></li>
             </ul>
           </div>
           <div>
-            <p>Resources</p>
-            <ul>
-              <li><a href="#">IOS & Android</a></li>
-              <li><a href="#">Watch a Demo</a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">API</a></li>
+            <p class="title">Resources</p>
+            <ul class="list">
+              <li class="item"><a href="#">IOS & Android</a></li>
+              <li class="item"><a href="#">Watch a Demo</a></li>
+              <li class="item"><a href="#">Customers</a></li>
+              <li class="item"><a href="#">API</a></li>
             </ul>
           </div>
           <div>
-            <p>Get In Touch</p>
-            <ul>
-              <li><img src="./images/content/phone-small.svg" /><a href="#">(480) 555-0103</a></li>
-              <li>
+            <p class="title">Get In Touch</p>
+            <ul class="list">
+              <li class="item">
+                <img src="./images/content/phone-small.svg" /><a href="#">(480) 555-0103</a>
+              </li>
+              <li class="item">
                 <img src="./images/content/location-small.svg" />
                 <a href="#">4517 Washington Ave.</a>
               </li>
-              <li>
+              <li class="item">
                 <img src="./images/content/mail-small.svg" /><a href="#">debra.holt@example.com</a>
               </li>
             </ul>
@@ -360,4 +377,3 @@
     ></script>
   </body>
 </html>
-

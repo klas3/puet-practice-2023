@@ -35,17 +35,12 @@
   }
 }
 
-.advice-blocks {
-  display: flex;
-  gap: 30px;
-}
-
 .advice-block {
   background-color: #fff;
-  //width: 100%;
 
   &__content{
     padding: 30px;
+    height: 150px;
   }
 
   &__title {
@@ -66,6 +61,6 @@
   }
 
   &__cover {
-    //width: 100%;
+    width: 100%;
   }
 }

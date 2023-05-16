@@ -35,9 +35,20 @@
 
 .contacts-body {
   display: grid;
-  grid-auto-flow: column;
+  min-height: 393px;
   place-items: center;
-  height: 393px;
+  gap: 18px;
+  grid-auto-flow: column;
+
+  @media (max-width: 1050px) {
+    grid-auto-flow: unset;
+    grid-template-columns: repeat(2, 328px);
+  }
+
+  @media (max-width: 740px) {
+    grid-auto-flow: unset;
+    grid-template-columns: repeat(1, 328px);
+  }
 
   .email {
     font-weight: 600;
@@ -75,6 +86,12 @@
 
     transition: all ease 0.3s;
 
+    svg {
+      width: 72px;
+      height: 72px;
+      fill: #00A0C1;
+    }
+
     &:hover {
       width: 328px;
       height: 393px;
@@ -85,6 +102,12 @@
 
       .submit {
         color: white;
+      }
+
+      transform: scale(1.1);
+
+      svg {
+        fill: #fff;
       }
     }
   }
